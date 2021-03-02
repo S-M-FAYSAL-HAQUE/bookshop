@@ -1,0 +1,1083 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#top-home{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bolder;
+}
+
+#top-profile{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#top-category{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#top-sign-in-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #B8DDFF;
+    color: black;
+    border: 1px solid #B8DDFF;
+}
+
+#top-sign-up-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #7FE996;
+    color: black;border: 1px solid #7FE996;
+}
+
+.photo-text-search-area p{
+    height: 500px;
+    width: 100%;
+    margin-top: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 50%),rgba(0, 0, 0, 50%)), url("../images/book-image1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+#photo-text{
+    padding-top: 100px;
+    padding-left: 300px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: oblique;
+    color: white;
+}
+
+#search-area{
+    margin-left: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 45px;
+}
+#search-button{
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid blue;
+    border-radius: 45px;
+    background-color:blue;
+    color: white;
+    transition: 0.5s ease;
+}
+#search-area:focus{
+    color:rgb(184, 55, 243);
+}
+#search-button:hover{
+    border: 1px solid transparent;
+    background-color:cyan;
+}
+@media only screen and (max-width: 1200px) {
+    #photo-text{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #search-area{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #search-button{
+        display: none;
+    }
+}
+
+.book-detail-body{
+    height: 600px;
+    margin-top: 50px;
+}
+
+.headline-book-detail{
+    height: 80px;
+}
+
+.headline-book-detail p{
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: oblique;
+    color: blue;
+    text-align: center;
+}
+.book-detail-sigment{
+    padding: 20px;
+}
+
+.book-detail-photo img{
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+.book-detail-information{
+    padding: 20px;
+}
+
+.book-name{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.price-tag{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.cart-image{
+    /*height: 50px;*/
+    /*width: 200px;*/
+
+}
+.book-detail-information img{
+    float: left;
+    height: 30px;
+    width: 30px;
+    /*margin-top: 5px;*/
+    /*margin-left: 20px;*/
+}
+
+#add-to-cart{
+
+}
+
+
+.cart-image button{
+    /*height: 100%;*/
+    /*width:100%;*/
+    /*border-radius: 5px;*/
+    /*border-color: rgb(85, 219, 243);*/
+    /*outline: none;*/
+    /*background-color: rgb(85, 219, 243);*/
+}
+#add-to-cart{
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: white;
+}
+
+/** sign in style Start **/
+
+#top-home{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bolder;
+}
+
+#top-profile{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#top-category{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#top-sign-in-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #B8DDFF;
+    color: black;
+    border: 1px solid #B8DDFF;
+}
+
+#top-sign-up-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #7FE996;
+    color: black;border: 1px solid #7FE996;
+}
+
+.hello-image-body img{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.signin{
+    height: 1200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background-color: #ECEFFF;
+}
+
+.signin-test-1{
+    padding-top: 50px;
+    font-size: 70px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bolder;
+    color: #8000CE;
+    text-align: center;
+    text-shadow: 2px 2px 6px #C26DF5;
+}
+
+.signin-test-2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight:normal;
+    text-align: center;
+}
+
+.google-photo img{
+    height: 100px;
+    width: 100%;
+    margin: auto 0;
+}
+
+.signin-test-3{
+    text-align: center;
+}
+
+.signin-test-4{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight:normal;
+    text-align: center;
+}
+
+.emmail-password-body{
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.sign-in-button{
+
+}
+
+.text-sign-in-button{
+    height: 80px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text-sign-in-button button{
+    border-radius: 45px;
+    border: none;
+    outline: none;
+    background-color:darkturquoise;
+    color: black;
+    width: 400px;
+    height: 57px;
+    font-size: 36px;
+    font-family: serif;
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.text-sign-in-button button:hover{
+    background-color:#3A4ADB;
+    color: white;
+}
+.signin-test-5{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight: bold;
+    text-align: center;
+}
+.signin-test-6{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+/** sign in style End **/
+
+/** sign up style Start **/
+
+#top-home{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bolder;
+}
+
+#top-profile{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#top-category{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#top-sign-in-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #B8DDFF;
+    color: black;
+    border: 1px solid #B8DDFF;
+}
+
+#top-sign-up-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #7FE996;
+    color: black;border: 1px solid #7FE996;
+}
+
+.sign-up-book-image img{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.signup{
+    height: 1200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background-color: #ECEFFF;
+}
+
+.signup-test-1{
+    padding-top: 50px;
+    font-size: 70px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bolder;
+    color: #8000CE;
+    text-align: center;
+    text-shadow: 2px 2px 6px #C26DF5;
+}
+
+.signup-test-2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight:normal;
+    text-align: center;
+}
+
+.google-photo img{
+    height: 100px;
+    width: 100%;
+    margin: auto 0;
+}
+
+.signup-test-3{
+    text-align: center;
+}
+
+.signup-test-4{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight:normal;
+    text-align: center;
+}
+
+.emmail-password-body{
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.sign-up-button{
+
+}
+
+.text-sign-up-button{
+    height: 80px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text-sign-up-button button{
+    border-radius: 45px;
+    border: none;
+    outline: none;
+    background-color:rgb(231, 7, 112);
+    color: white;
+    width: 400px;
+    height: 57px;
+    font-size: 36px;
+    font-family: serif;
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.text-sign-up-button button:hover{
+    background-color:#3adb6a;
+    color: black;
+}
+.signup-test-5{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight: bold;
+    text-align: center;
+}
+.signup-test-6{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+/** sign up End **/
+
+/** cart page Start **/
+#top-home{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bolder;
+}
+
+#top-profile{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#top-category{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#top-sign-in-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #B8DDFF;
+    color: black;
+    border: 1px solid #B8DDFF;
+}
+
+#top-sign-up-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #7FE996;
+    color: black;border: 1px solid #7FE996;
+}
+
+.cart-body{
+    display: grid;
+    height: 200vh;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    grid-template-columns: 0.4fr 1fr;
+    grid-gap: 0.5rem;
+    grid-area:
+        "sidebar"
+        "main";
+}
+.sidebar{
+    background-color:;
+}
+.main{
+    background-color:;
+}
+@media only screen and (max-width: 550px) {
+    .cart-body{
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr 2fr;
+        grid-template-areas:
+    "sidebar"
+    "main";
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+    .cart-body{
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr 2fr;
+        grid-template-areas:
+    "sidebar"
+    "main";
+    }
+
+}
+
+.checkout{
+    height: 60px;
+    width: auto;
+    margin-top: 10px;
+    background-color:#F0DCFF;
+    border-radius: 5px;
+}
+
+.checkout h4{
+    padding-top: 15px;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.checkout-summary{
+    height: 400px;
+    width: auto;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight:lighter;
+    border-radius: 5px;
+    background-color:#F0EBEB;
+}
+
+.subtotal-area{
+    border-bottom: 2px dotted black;
+}
+
+.subtotal-line{
+    width: 150px;
+    padding-left: 10px;
+    padding-top:20px;
+    font-size: 20px;
+}
+
+.subtotal{
+    width: 150px;
+}
+
+.subtotal p{
+    float: right;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.shipping-area{
+    border-bottom: 2px dotted black;
+}
+
+.shipping-line{
+    width: 150px;
+    padding-left: 10px;
+    padding-top:20px;
+    font-size: 20px;
+}
+
+.shipping{
+    width: 150px;
+}
+
+.shipping p{
+    float: right;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.total-area{
+    border-bottom: 2px solid black;
+}
+
+.total-line{
+    width: 150px;
+    padding-left: 10px;
+    padding-top:20px;
+    font-size: 20px;
+}
+
+.total{
+    width: 150px;
+}
+
+.total p{
+    float: right;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.total-payable-area{
+
+}
+
+.total-payable-line{
+    width: 150px;
+    padding-left: 10px;
+    padding-top:20px;
+    font-size: 20px;
+}
+
+.total-payable{
+    width: 150px;
+}
+
+.total-payable p{
+    float: right;
+    padding-right: 10px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.my-cart{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    background-color:#F0DCFF;
+    border-radius: 5px;
+}
+
+.my-cart p{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.book-cover{
+
+}
+
+.cart-item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.book-cover img{
+    float: left;
+    width: 70%;
+
+}
+
+.book-info{
+    float: left;
+    width: 800px;
+}
+
+.book-info-content{
+
+}
+
+.book-info-content-book-meta{
+    float: left;
+    height: 50%;
+    width: 200px;
+}
+
+.book-info-content-book-action{
+
+}
+
+.book-info-content-quantity{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 200px;
+}
+
+.book-info-content-quantity p{
+    height: 30px;
+    width: 50px;
+    border: 1px solid black;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.book-info-content-quantity #plus-sign{
+    height: 30px;
+    width: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+.book-info-content-quantity #minus-sign{
+    height: 30px;
+    width: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.book-info-content-book-action{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 200px;
+}
+.book-info-content-book-action #remove-sign{
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: coral;
+    text-align: center;
+}
+
+.book-info-content-book-meta a{
+
+}
+
+.book-info-content-book-meta p{
+
+}
+.book-info-content-price{
+    float: right;
+    margin-top: 10px;
+}
+.d-flex{
+
+}
+.price{
+
+}
+
+/** cart page End **/
+
+/** new arival Start **/
+
+#top-home{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bolder;
+}
+
+#top-profile{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#top-category{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#top-sign-in-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #B8DDFF;
+    color: black;
+    border: 1px solid #B8DDFF;
+}
+
+#top-sign-up-button{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #7FE996;
+    color: black;border: 1px solid #7FE996;
+}
+
+.photo-text-search-area p{
+    height: 500px;
+    width: 100%;
+    margin-top: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 50%),rgba(0, 0, 0, 50%)), url("../images/book-image1.jpg");
+    background-position: center;
+    border-radius: 5px;
+}
+#photo-text{
+    padding-top: 100px;
+    padding-left: 300px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: oblique;
+    color: white;
+}
+
+#search-area{
+    margin-left: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 45px;
+}
+#search-button{
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid blue;
+    border-radius: 45px;
+    background-color:blue;
+    color: white;
+    transition: 0.5s ease;
+}
+#search-area:focus{
+    color:rgb(184, 55, 243);
+}
+#search-button:hover{
+    border: 1px solid transparent;
+    background-color:cyan;
+}
+@media only screen and (max-width: 1200px) {
+    #photo-text{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #search-area{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #search-button{
+        display: none;
+    }
+}
+
+.new-arrival-book-body{
+    display: grid;
+    height: 200vh;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    grid-template-columns: 0.4fr 1fr;
+    grid-gap: 0.5rem;
+    grid-area:
+        "sidebar"
+        "main";
+}
+.sidebar{
+    background-color:;
+}
+.main{
+    background-color:;
+}
+@media only screen and (max-width: 550px) {
+    .new-arrival-book-body{
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr 2fr;
+        grid-template-areas:
+      "sidebar"
+      "main";
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+    .new-arrival-book-body{
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr 2fr;
+        grid-template-areas:
+      "sidebar"
+      "main";
+    }
+
+}
+
+.filter{
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+    background-color:#F0DCFF;
+    border-radius: 5px;
+}
+.filter img{
+    float:left;
+    height:35px;
+    width: 35px;
+    padding-top: 5px;
+}
+.filter h4{
+    padding-top: 5px;
+    padding-left: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+}
+.subject{
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+    background-color:#F0DCFF;
+    border-radius: 5px;
+}
+.subject h4{
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+}
+.subject-name{
+    height: 200px;
+    width: auto;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color:#F0EBEB;
+    overflow-y: scroll;
+}
+.writter{
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+    background-color:#F0DCFF;
+    border-radius: 5px;
+}
+.writter h4{
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+}
+.writter-name{
+    height: 200px;
+    width: auto;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color:#F0EBEB;
+    overflow-y: scroll;
+}
+.publishers{
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+    background-color:#F0DCFF;
+    border-radius: 5px;
+}
+.publishers h4{
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+}
+.publishers-name{
+    height: 200px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color:#F0EBEB;
+    overflow-y: scroll;
+}
+.new-arrival-books{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    background-color:#F0DCFF;
+    border-radius: 5px;
+}
+.new-arrival-books p{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 35px;
+    font-weight: bold;
+}
+.new-arrival-books-body-text{
+    height: 50px;
+    width: auto;
+    margin-top: 10px;
+}
+.new-arrival-books-body-text ul li{
+    padding-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    list-style: none;
+}
+.new-arrival-books-body-block{
+}
+.card{
+    float: left;
+    margin: 5px;
+}
+.button-groups{
+
+}
+.button-groups-1{
+}
+
+
+/** new arival End**/
+
+
+/** little modification */
+
+.img-thumb img{
+    width: 200px;
+    height: 200px;
+}
+.single-card{
+    width: 18rem;
+    float: left;
+}
+.card.single-card img{
+    width: 285px;
+    height: 285px;
+}
+.block-card > .block-card-area {
+    padding-bottom: 100px;
+}
+.addtocart-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 188px;
+    padding: 10px 15px;
+    border: 1px solid #888888;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.addtocart-btn img{
+
+}
+.addtocart-btn p{
+   margin:0px;
+}
+.quantity{
+    display:flex;
+    align-items:center;
+}
+.quantity button{
+    border: none;
+    padding: 5px;
+    margin: 5px;
+}
+.quantity input{
+    width: 50px;
+    background: #3333;
+    border: none;
+    padding: 8px 0px;
+    text-align: center;
+}
+

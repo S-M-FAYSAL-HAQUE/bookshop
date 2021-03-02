@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#top-home{
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bolder;
+}
+
+#top-profile{
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+#top-category{
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+#top-sign-in-button{
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #B8DDFF;
+  color: black;
+  border: 1px solid #B8DDFF;
+}
+
+#top-sign-up-button{
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #7FE996;
+  color: black;border: 1px solid #7FE996;
+}
+
+.hello-image-body img{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.signin{
+    height: 1200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background-color: #ECEFFF;
+  }
+
+.signin-test-1{
+    padding-top: 50px;
+    font-size: 70px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bolder;
+    color: #8000CE;
+    text-align: center;
+    text-shadow: 2px 2px 6px #C26DF5;
+  }
+
+.signin-test-2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight:normal;
+    text-align: center;
+  }
+
+.google-photo img{
+    height: 100px;
+    width: 100%;
+    margin: auto 0;
+}
+
+.signin-test-3{
+    text-align: center; 
+  }
+
+.signin-test-4{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight:normal;
+    text-align: center;
+  }
+
+.emmail-password-body{
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.sign-in-button{
+    
+  }
+
+.text-sign-in-button{
+    height: 80px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text-sign-in-button button{
+    border-radius: 45px;
+    border: none;
+    outline: none;
+    background-color:darkturquoise;
+    color: black;
+    width: 400px;
+    height: 57px;
+    font-size: 36px;
+    font-family: serif;
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.text-sign-in-button button:hover{
+    background-color:#3A4ADB;
+    color: white;
+}
+.signin-test-5{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight: bold;
+    text-align: center;
+}
+.signin-test-6{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+  
+  
+  
+  
