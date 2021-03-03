@@ -39,6 +39,10 @@ class AuthorController extends Controller
     public function store(Request $request)
     {
         //
+        $validated = $request->validate([
+            'author_name' => 'required',
+            'author_bio' => 'required',
+        ]);
         Author::create($request->all());
         return redirect()->route('authors.index');
     }

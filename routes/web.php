@@ -39,7 +39,7 @@ Route::get('/customer/login',[LoginController::class,'showCustomerLoginForm'])->
 Route::post('/customer/login',[LoginController::class,'customerLogin'])->name('customer.login');
 
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 
 Route::get('/customer',function (){

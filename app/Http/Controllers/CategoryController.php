@@ -17,6 +17,10 @@ class CategoryController extends Controller
         return view('admin.pages.category.create', compact('categories'));
     }
     public function store(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'category_description' => 'required'    
+        ]);
         Category::create($request->all());
         return redirect()->route('categories.index');
     }
