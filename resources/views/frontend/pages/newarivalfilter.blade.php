@@ -61,7 +61,7 @@
             </div>
 
             <div class="container new-arrival-books-body-block">
-                @foreach($books as $book)
+                @forElse($books as $book)
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset('storage/book_photos').'/'. $book->book_photo }}" class="rounded" alt="...">
                         <div class="card-body">
@@ -70,7 +70,9 @@
                             <a href="{{ route('frontend.book.show',$book) }}" class="btn btn-primary">Book Details</a>
                         </div>
                     </div>
-                @endforeach
+                    @empty
+                        <h2 class="no-book">NO Books availabe with this filter</h2>
+                @endforelse
 
             </div>
         </div>

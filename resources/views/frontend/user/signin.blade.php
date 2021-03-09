@@ -20,7 +20,7 @@
                 <img class="container col-2 col-sm-8 col-md-6" src="{{ asset('images/google.svg') }}" alt="">
             </div>
             <h2 class="container signin-test-3  col-8 col-sm-8 col-md-6"> <b>OR</b></h2>
-            <h3 class="container signin-test-4  col-8 col-sm-8 col-md-6">Login with your email or phone number</h3>
+            <h3 class="container signin-test-4  col-8 col-sm-8 col-md-6">Login with your email</h3>
 
             <form method="POST" action="{{ route('customer.login') }}">
                 @csrf

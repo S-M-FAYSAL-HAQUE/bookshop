@@ -49,6 +49,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+    
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -73,13 +74,16 @@ class RegisterController extends Controller
         ]);
     }
     public function showRegistrationForm()
-{
-    return redirect('login');
-}
+    {
+        return view('admin.pages.admin.index');
+    }
 
 public function register()
 {
 
+}
+public function adminindex(){
+    
 }
 
     public function showCustomerRegisterForm()
