@@ -12,10 +12,16 @@
 
         </div>
 
+
         <!-- end:: Subheader -->
 
             <!-- begin:: Content -->
             <div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
+                @if(session()->has('success'))
+                    <div class="alert alert-success">
+                        {{ session()->get('success') }}
+                    </div>
+                @endif
 
                 <div class="kt-portlet kt-portlet--mobile">
                     <div class="kt-portlet__head kt-portlet__head--lg">
@@ -24,16 +30,16 @@
 											<i class="kt-font-brand flaticon2-line-chart"></i>
 										</span>
                             <h3 class="kt-portlet__head-title">
-                                Authors
+                                Admins
                             </h3>
                         </div>
                         <div class="kt-portlet__head-toolbar">
                             <div class="kt-portlet__head-wrapper">
                                 <div class="kt-portlet__head-actions">
 
-                                    <a href="{{route('authors.create')}}" class="btn btn-brand btn-elevate btn-icon-sm">
+                                    <a href="{{route('admins.create')}}" class="btn btn-brand btn-elevate btn-icon-sm">
                                         <i class="la la-plus"></i>
-                                        Add new author
+                                        Add new Admin
                                     </a>
                                 </div>
                             </div>
@@ -48,27 +54,25 @@
                                 <th>Author ID</th>
                                 <th>Name</th>
                                 <th>Author Bio</th>
-                                <th>Status</th>
                                 <th>Actions</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach( $authors as $author)
+                            @foreach( \App\User::all() as $user)
                             <tr>
-                                <td>{{ $author->id }}</td>
-                                <td>{{ $author->author_name }}</td>
-                                <td>{{ $author->author_bio }}</td>
-                                <td>
-                                    <span class="kt-badge  kt-badge--success kt-badge--inline kt-badge--pill">Active</span>
-                                </td>
+                                <td>{{ $user->id }}</td>
+                                <td>{{ $user->name }}</td>
+                                <td>{{ $user->email }}</td>
                                 <td nowrap>
-                                    <a href="{{ route('authors.show', $author) }}" title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md"><i class="la la-edit"></i></a>
-                                    <a title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md"><i class="la la-trash"></i></a>
+                                    <a href="#" title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md"><i class="la la-edit"></i></a>
+                                    <form action="{{ route('admins.destroy',$user) }}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md" type="submit"><i class="la la-trash"></i></button>
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach
-
-
 
                             </tbody>
                         </table>

@@ -38,18 +38,11 @@ Route::post('/customer/register',[RegisterController::class,'createCustomer'])->
 Route::get('/customer/login',[LoginController::class,'showCustomerLoginForm'])->name('customer.login.index');
 Route::post('/customer/login',[LoginController::class,'customerLogin'])->name('customer.login');
 
-
-Auth::routes(['register' => false]);
-
-
-Route::get('/customer',function (){
-    return 'customer page';
-});
+Auth::routes(['register' => false, 'reset' => false, 'verify' => false ]);
 
 Route::middleware(['auth'])->group(function (){
-    Route::get('/home', 'HomeController@index')->name('home');
 
-    Route::get('/dashboard','AdminDashboardController@index')->name('dashboard');
+    Route::get('/admin/dashboard','AdminDashboardController@index')->name('dashboard');
 
     Route::get('/admin/categories', [CategoryController::class, 'index'])->name('categories.index');
     Route::get('/admin/categories/create', [CategoryController::class, 'create'])->name('categories.create');
@@ -70,6 +63,12 @@ Route::middleware(['auth'])->group(function (){
     Route::post('/admin/books',[BookController::class,'store'])->name('books.store');
     Route::get('/admin/books/{book}',[BookController::class,'show'])->name('books.show');
     Route::delete('/admin/books/{book}',[BookController::class,'destroy'])->name('books.destroy');
+
+    Route::get('/admin', [RegisterController::class,'index'])->name('admins.index');
+    Route::get('/admin/create', [RegisterController::class,'createAdmin'])->name('admins.create');
+    Route::post('/admin', [RegisterController::class,'register'])->name('admins.store');
+    Route::delete('/admin/{user}', [RegisterController::class,'destroy'])->name('admins.destroy');
+
 
 });
 

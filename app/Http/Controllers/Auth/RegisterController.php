@@ -6,7 +6,9 @@ use App\Customer;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
@@ -39,8 +41,12 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
-        $this->middleware('guest:customer');
+        $this->middleware('guest',[
+            'except'=>['index','createAdmin','register','destroy']
+        ]);
+        $this->middleware('guest:customer',[
+            'except'=>['index','createAdmin','register','destroy']
+        ]);
     }
 
     /**
@@ -49,7 +55,6 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
-    
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -73,18 +78,30 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
-    public function showRegistrationForm()
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+//        $this->guard()->login($user);
+
+        if ($response = $this->registered($request, $user)) {
+            return $response;
+        }
+
+        return $request->wantsJson()
+            ? new JsonResponse([], 201)
+            : redirect()->route('admins.index')->with('success','Admin account created');
+    }
+    public function index()
     {
         return view('admin.pages.admin.index');
     }
-
-public function register()
-{
-
-}
-public function adminindex(){
-    
-}
+    public function createAdmin()
+    {
+        return view('admin.pages.admin.create');
+    }
 
     public function showCustomerRegisterForm()
     {
@@ -100,6 +117,13 @@ public function adminindex(){
             'password' => Hash::make($request['password']),
         ]);
         return redirect()->intended('/');
+    }
+
+    public function destroy(User $user)
+    {
+        $user->delete();
+
+        return redirect()->route('admins.index')->with('success','User deleted');
     }
 
 }

@@ -22,7 +22,7 @@ class RedirectIfAuthenticated
             return redirect('/');
         }
         if (Auth::guard($guard)->check()) {
-            return redirect(RouteServiceProvider::HOME);
+            return redirect()->route('dashboard');
         }
 
         return $next($request);

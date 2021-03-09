@@ -7,7 +7,7 @@
 
 <section class="hello-image">
     <div class="container hello-image-body">
-        <img src="images/hello-image.jpg" alt="">
+        <img src="{{ asset('images/hello-image.jpg') }}" alt="">
     </div>
 </section>
 
